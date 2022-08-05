@@ -6,7 +6,6 @@ public:
         dp.resize(1001);
         fill(dp.begin(), dp.end(), -1);
     }
-    
     int combinationSum4(vector<int>& nums, int target, int currSum=0) {
         if(currSum > target) return 0;
         if(currSum == target) return 1;
