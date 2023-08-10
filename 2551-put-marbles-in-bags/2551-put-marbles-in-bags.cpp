@@ -9,13 +9,10 @@ public:
         }
         sort(pairs.begin(), pairs.end());
         
-        long min = 0;
-        long max = 0;
-        
+        long long ans = 0;
         for(int i = 0; i < k - 1; i++){
-            min += pairs[i];
-            max += pairs[n - i - 2];
+            ans += pairs[n - i - 2] - pairs[i];
         }
-        return max - min;
+        return ans;
     }
 };
