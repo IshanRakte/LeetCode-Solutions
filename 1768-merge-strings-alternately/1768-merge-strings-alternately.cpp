@@ -4,20 +4,23 @@ public:
         string ans = "";
         int i = 0;
         int j = 0;
-        while(i < word1.size() && j < word2.size()){
+        while(i < word1.size() and j < word2.size()){
             ans.push_back(word1[i]);
             ans.push_back(word2[j]);
             i++;
             j++;
         }
+        
         while(i < word1.size()){
             ans.push_back(word1[i]);
             i++;
         }
+        
         while(j < word2.size()){
             ans.push_back(word2[j]);
             j++;
         }
-        return ans;
-    }
+        
+        return ans;
+    }
 };
